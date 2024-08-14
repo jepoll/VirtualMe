@@ -1,0 +1,18 @@
+﻿@model TaskQuestCreateEditeModel
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<div class="form-group">
+    <label asp-for="TaskQuest.TaskTypeId" class="control-label"></label>
+    <select asp-for="TaskQuest.TaskTypeId" class="form-control" asp-items="Model.Types"></select>
+    <span asp-validation-for="TaskQuest.TaskTypeId" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="TaskQuest.ActivityId" class="control-label"></label>
+    <select asp-for="TaskQuest.ActivityId" class="form-control" asp-items="Model.Activities"></select>
+    <span asp-validation-for="TaskQuest.ActivityId" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="TaskQuest.TaskDescription" class="control-label"></label>
+    <input asp-for="TaskQuest.TaskDescription" class="form-control" />
+    <span asp-validation-for="TaskQuest.TaskDescription" class="text-danger"></span>
+</div>

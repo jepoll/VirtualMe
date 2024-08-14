@@ -1,0 +1,18 @@
+﻿@model RewardCreateEditeViewModel
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<div class="form-group">
+    <label asp-for="Reward.TaskQuestId" class="control-label"></label>
+    <select asp-for="Reward.TaskQuestId" class="form-control" asp-items="Model.TaskQuests"></select>
+    <span asp-validation-for="Reward.TaskQuestId" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Reward.ItemId" class="control-label"></label>
+    <select asp-for="Reward.ItemId" class="form-control" asp-items="Model.Items"></select>
+    <span asp-validation-for="Reward.ItemId" class="text-danger"></span>
+</div>
+<div class="form-group" style="visibility: hidden">
+    <label asp-for="Reward.Quantity" class="control-label"></label>
+    <input type="number" value="1" asp-for="Reward.Quantity" class="form-control" asp-items="Model.Items">
+    <span asp-validation-for="Reward.Quantity" class="text-danger"></span>
+</div>

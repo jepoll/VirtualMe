@@ -1,0 +1,149 @@
+﻿<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="ManageYourAccount" xml:space="preserve">
+        <value>Управляйте своим аккаунтом</value>
+    </data>
+    <data name="ChangeYourAccountSettings" xml:space="preserve">
+        <value>Измените настройки своего аккаунта</value>
+    </data>
+    <data name="UpdatePassword" xml:space="preserve">
+        <value>Обновить пароль</value>
+    </data>
+    <data name="DeletingAccountData" xml:space="preserve">
+        <value>Удаление этих данных сотрёт ваш аккаунт перманентно и это нельзя отменить.</value>
+    </data>
+    <data name="DeletingAccount" xml:space="preserve">
+        <value>Удалить данные и закрыть мой аккаунт</value>
+    </data>
+    <data name="ThisDis2Fa" xml:space="preserve">
+        <value>Это действие только отключает двухэтапную аунтификацию.</value>
+    </data>
+    <data name="IfYouWishDisableKeys" xml:space="preserve">
+        <value>Отключение двухэтапной аунтефикации де меняет ключи от аунтификациооных приложений. Если вы желаете изменить эти ключи, то вы должны перегенерировать ключи.</value>
+    </data>
+    <data name="ResetKeys" xml:space="preserve">
+        <value>Перегенерировать ключи аунтефикации.</value>
+    </data>
+    <data name="Disable2FA" xml:space="preserve">
+        <value>Отключить двухэтапную аунтификацию.</value>
+    </data>
+    <data name="AccesDenied" xml:space="preserve">
+        <value>У вас нет доступа к данному ресурсу.</value>
+    </data>
+    <data name="Article" xml:space="preserve">
+        <value>Статья</value>
+    </data>
+    <data name="ChangeEmail" xml:space="preserve">
+        <value>Изменить почту</value>
+    </data>
+    <data name="ClickHereToConfAcc" xml:space="preserve">
+        <value>Нажмите сюда чтобы подтвердить ваш аккаунт</value>
+    </data>
+    <data name="ClickToLogOut" xml:space="preserve">
+        <value>Нажмите чтобы выйти</value>
+    </data>
+    <data name="ConfirmPassword" xml:space="preserve">
+        <value>Подтвердите пароль</value>
+    </data>
+    <data name="CreateANewAcc" xml:space="preserve">
+        <value>Создайте новый аккаунт.</value>
+    </data>
+    <data name="Docs" xml:space="preserve">
+        <value>Вокументации</value>
+    </data>
+    <data name="Email" xml:space="preserve">
+        <value>Пачта</value>
+    </data>
+    <data name="EnterYourEmail" xml:space="preserve">
+        <value>Введите вашу почту</value>
+    </data>
+    <data name="ForgotYourPassword" xml:space="preserve">
+        <value>Забыли пароль?</value>
+    </data>
+    <data name="LogIn" xml:space="preserve">
+        <value>Зайти</value>
+    </data>
+    <data name="LoginWithARecCode" xml:space="preserve">
+        <value>Зайти с кодом востановления</value>
+    </data>
+    <data name="DontHaveAccesToYourRecApp" xml:space="preserve">
+        <value>Нед доступа к устройству аунтификации? Вы можете:</value>
+    </data>
+    <data name="NormalyWouldEmailes" xml:space="preserve">
+        <value>Обычно это будет отправленно:</value>
+    </data>
+    <data name="Password" xml:space="preserve">
+        <value>Пароль</value>
+    </data>
+    <data name="PleaseCheckEmail" xml:space="preserve">
+        <value>Пожалуйста, проверьте почту чтобы подтвердить ваш аккаунт</value>
+    </data>
+    <data name="PleaseCheckEmailTOConfPassword" xml:space="preserve">
+        <value>Пожалуйста, проверте вашу почту чтобы востановить ваш пароль.</value>
+    </data>
+    <data name="Register" xml:space="preserve">
+        <value>Зарегистрироваться</value>
+    </data>
+    <data name="RegisterAsANewUser" xml:space="preserve">
+        <value>Зарегистрироваться как новый  пользователь</value>
+    </data>
+    <data name="Resend" xml:space="preserve">
+        <value>Переслать</value>
+    </data>
+    <data name="ResendEmailConfirm" xml:space="preserve">
+        <value>Переслать подтверждение почты</value>
+    </data>
+    <data name="Reset" xml:space="preserve">
+        <value>Востановить</value>
+    </data>
+    <data name="ResetYourPassword" xml:space="preserve">
+        <value>Востановить ваш пароль</value>
+    </data>
+    <data name="SendEmailVerif" xml:space="preserve">
+        <value>Отослать письмо подтверждения почты</value>
+    </data>
+    <data name="ThereAreNoExternalServices" xml:space="preserve">
+        <value>Внешние сервисы аунтификации не настроины. Посмотрите данную статью для поддержки входа через внешне службы.</value>
+    </data>
+    <data name="ThisAccLockedOut" xml:space="preserve">
+        <value>Этот аккаунт был закрыт, пожалуйства попробуйте позже.</value>
+    </data>
+    <data name="ThisAppDoesntHave" xml:space="preserve">
+        <value>Это приложение пока не имеет настоящего отправителя письм. Посмотрите как настроить отправителя писем.</value>
+    </data>
+    <data name="UseALocalAccToLogin" xml:space="preserve">
+        <value>Используйте местный аккаунт чтобы зайти</value>
+    </data>
+    <data name="UseAnotherServiceForLogin" xml:space="preserve">
+        <value>Используйте сервис чтобы зайти</value>
+    </data>
+    <data name="UseAnotherServiceToRegister" xml:space="preserve">
+        <value>Используйте сервис чтобы зарегестрироваться.</value>
+    </data>
+    <data name="YouHaveRequestedLoginWithRecCode" xml:space="preserve">
+        <value>Вы запросили вход с помощью ключа востановления. Этот вход не будет запомнен до тех пор пока вы не предоставите код приложениия аунтификации или пока не отключите двухэтапную анутификацию и не зайдёте.</value>
+    </data>
+    <data name="YouLoggedOut" xml:space="preserve">
+        <value>Вы успешно вышли из приложения</value>
+    </data>
+    <data name="YourLoginIsProtected" xml:space="preserve">
+        <value>Ваш вход защищён с помощью приложения аунтификации. Введите пароль аунтефикации ниже.</value>
+    </data>
+    <data name="YourPasswordHaveBeenReset" xml:space="preserve">
+        <value>Ваш пароль был востановлен. Пожалуйста нажмите сюда чтобы зайти:</value>
+    </data>
+    <data name="NickName" xml:space="preserve">
+        <value>Логин</value>
+    </data>
+</root>

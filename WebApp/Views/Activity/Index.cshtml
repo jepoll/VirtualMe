@@ -1,0 +1,141 @@
+@* @model IEnumerable<Core.BLL.DTO.Entities.Activity> *@
+@using Core.BLL.DTO.Entities
+@using Humanizer
+@model ActivityIndexViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>@Shared.Resources.SharedRes.Index</h1>
+
+<div id="slot">
+    @if (Model.Activity != null)
+    {
+        <div id="Act">
+            @Model.Activity.Activity.Name,
+            @Model.Activity.Activity.Description
+        </div>
+        <div id="timer"></div>
+                       
+        <script>
+            function updateTimer(){
+                console.log("Called!");
+                var holder = document.getElementById("timer");
+                var now = new Date().getTime() + Math.round(@TimeSpan.FromTicks(DateTime.Parse("Jan 1, 1970").Ticks).TotalMilliseconds);
+                // var time = Math.round(@(TimeSpan.FromTicks(DateTime.Now.Subtract(Model.Activity!.Start).Ticks).TotalMilliseconds));
+                // var time = now - Math.round(@TimeSpan.FromTicks(Model.Activity.Start.Ticks).TotalMilliseconds);
+                var finish = Math.round(@(TimeSpan.FromTicks(Model.Activity.TimeFinish.Ticks).TotalMilliseconds));
+                var left = finish - now;
+                console.log(left);
+                // var days = Math.round(left / (24 * 60 * 60 * 1000));
+                // var hours = left.getHours();
+                // var minutes = left.getMinutes();
+                // var seconds = left.getSeconds();
+                if (left < 0) location.reload();
+                
+                var days = Math.floor(left / (24 * 60 * 60 * 1000));
+                left %= (24 * 60 * 60 * 1000);
+                var hours = Math.floor(left / (60 * 60 * 1000));
+                left %= (60 * 60 * 1000);
+                var minutes = Math.floor(left / (60 * 1000));
+                left %= (60 * 1000);
+                var seconds = Math.floor(left / 1000);
+                
+                minutes = (minutes < 10 ? "0" : "") + minutes;
+                seconds = (seconds < 10 ? "0" : "") + seconds;
+                
+                holder.innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+                setTimeout(updateTimer, 1000);
+            }
+            updateTimer();
+        </script>
+    }
+    else
+    {
+        <div>@Shared.Resources.SharedRes.NoCurrentActivity</div>
+    }
+</div>
+
+<p>
+    <a asp-action="Create">@Shared.Resources.SharedRes.CreateNew</a>
+</p>
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Activities.First().Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Activities.First().Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Activities.First().ActivityType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Activities.First().Stat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Activities.First().StrengthLimit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Activities.First().DexterityLimit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Activities.First().IntelligenceLimit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Activities.First().LevelLimit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Activities.First().StressGain)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Activities.First().StaminaDrain)
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Activities) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ActivityType!.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Stat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StrengthLimit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DexterityLimit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IntelligenceLimit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LevelLimit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StressGain)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StaminaDrain)
+            </td>
+            <td>
+                <a asp-action="CreateFromSelect" asp-controller="AvatarsActivity" asp-route-activityId="@item.Id">@Shared.Resources.SharedRes.StartNewActivity</a> |
+                <a asp-action="Edit" asp-route-id="@item.Id">@Shared.Resources.SharedRes.Edit</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">@Shared.Resources.SharedRes.Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+

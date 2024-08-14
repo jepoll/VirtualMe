@@ -1,0 +1,46 @@
+@model ItemCreateEditeViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>@Shared.Resources.SharedRes.Create</h1>
+
+<h4>@Core.Resources.Domain.DomainEntities.Item</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form id="itemCreate" asp-action="Create" enctype="multipart/form-data">
+            <partial name="_CreateEdite" model="Model"/>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">@Shared.Resources.SharedRes.BackToList</a>
+</div>
+
+<script>
+    const checkBox = document.getElementById('checkBox');
+    const stat = document.getElementById('stat');
+    const slot = document.getElementById('slot');
+    const obj = document.getElementById('obj');
+    checkBox.onclick = () => {
+        if (!checkBox.checked){
+            stat.style.visibility = "visible";
+            slot.style.visibility = "visible";
+            obj.style.visibility = "visible";
+            } else {
+            stat.style.visibility = "hidden";
+            slot.style.visibility = "hidden";
+            obj.style.visibility = "hidden";
+            }
+        }
+</script>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

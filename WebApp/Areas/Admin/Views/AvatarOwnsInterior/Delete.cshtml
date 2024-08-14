@@ -1,0 +1,36 @@
+@model Core.BLL.DTO.AddressTables.AvatarOwnsInterior
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>@Shared.Resources.SharedRes.Delete</h1>
+
+<h3>@Shared.Resources.SharedRes.AreUDelete</h3>
+<div>
+    <h4>@Core.Resources.Domain.DomainEntities.AvatarOwnsInterior</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Avatar)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Avatar.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Interior)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Interior.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PurchaseDate)
+        </dt>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">@Shared.Resources.SharedRes.BackToList</a>
+    </form>
+</div>

@@ -1,0 +1,25 @@
+﻿@page
+@model Disable2faModel
+@{
+    ViewData["Title"] = "Disable two-factor authentication (2FA)";
+    ViewData["ActivePage"] = ManageNavPages.TwoFactorAuthentication;
+}
+
+<partial name="_StatusMessage" for="StatusMessage" />
+<h3>@ViewData["Title"]</h3>
+
+<div class="alert alert-warning" role="alert">
+    <p>
+        <strong>@Shared.Resources.AspPages.ThisDis2Fa</strong>
+    </p>
+    <p>
+        @Shared.Resources.AspPages.IfYouWishDisableKeys
+        <a asp-page="./ResetAuthenticator">@Shared.Resources.AspPages.ResetKeys</a>
+    </p>
+</div>
+
+<div>
+    <form method="post">
+        <button class="btn btn-danger" type="submit">@Shared.Resources.AspPages.Disable2FA</button>
+    </form>
+</div>

@@ -1,0 +1,25 @@
+﻿@page
+@model ErrorModel
+@{
+    ViewData["Title"] = "Error";
+}
+
+<h1 class="text-danger">@Core.Resources.Error.Error_</h1>
+<h2 class="text-danger">@Core.Resources.Error.AnErrOcured</h2>
+
+@if (Model.ShowRequestId)
+{
+    <p>
+        <strong>@Core.Resources.Error.ReqId</strong> <code>@Model.RequestId</code>
+    </p>
+}
+
+<h3>@Core.Resources.Error.DevMode</h3>
+<p>
+    @Core.Resources.Error.Swaping2
+</p>
+<p>
+    @Core.Resources.Error.TheDevEnv
+    @Core.Resources.Error.ItCanResult
+    @Core.Resources.Error.ForLocalDebug
+</p>

@@ -1,0 +1,44 @@
+﻿<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="Stat" xml:space="preserve">
+        <value>Стата</value>
+    </data>
+    <data name="Description" xml:space="preserve">
+        <value>Описание</value>
+    </data>
+    <data name="DexterityLimit" xml:space="preserve">
+        <value>Минимальная ловкость</value>
+    </data>
+    <data name="StressGain" xml:space="preserve">
+        <value>Увеличение стресса</value>
+    </data>
+    <data name="StrengthLimit" xml:space="preserve">
+        <value>Минимальная сила</value>
+    </data>
+    <data name="StaminaDrain" xml:space="preserve">
+        <value>Потребление стамины</value>
+    </data>
+    <data name="Name" xml:space="preserve">
+        <value>Название</value>
+    </data>
+    <data name="LevelLimit" xml:space="preserve">
+        <value>Минимальный уровень</value>
+    </data>
+    <data name="IntelligenceLimit" xml:space="preserve">
+        <value>Минимальный интелект</value>
+    </data>
+    <data name="ActivityTypeId" xml:space="preserve">
+        <value>Вид активности</value>
+    </data>
+</root>

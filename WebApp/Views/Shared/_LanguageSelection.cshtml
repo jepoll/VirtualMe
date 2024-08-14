@@ -1,0 +1,37 @@
+﻿@using Microsoft.Extensions.Options
+@inject IOptions<RequestLocalizationOptions> LocOptions
+
+@{
+    var cultItems = LocOptions.Value.SupportedUICultures.Select(cult =>
+        new
+        {
+            Value = cult.Name,
+            Text = cult.NativeName
+        });
+}
+
+<li class="nav-item dropdown text-dark">
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        @{
+            var title = char.ToUpper(Thread.CurrentThread.CurrentUICulture.NativeName[0])
+                        + Thread.CurrentThread.CurrentUICulture.NativeName.Split(" ")[0].Substring(1);
+        }
+        @title
+
+    </a>
+    <ul class="dropdown-menu">
+        @foreach (var item in cultItems)
+        {
+            <li>
+                <a class="dropdown-item nav-link text-dark" asp-controller="Home"
+                   asp-action="SetLanguage" asp-area=""
+                   asp-route-culture="@item.Value" asp-route-returnUrl="@Context.Request.Path@Context.Request.QueryString">
+                    @{
+                        var text = char.ToUpper(item.Text[0]) + item.Text.Split(" ")[0].Substring(1);
+                    }
+                    @text
+                </a>
+            </li>
+        }
+    </ul>
+</li>

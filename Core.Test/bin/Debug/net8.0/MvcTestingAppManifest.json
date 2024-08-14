@@ -1,0 +1,21 @@
+{
+  "Core.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.BLL",
+  "Core.BLL.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.BLL.DTO",
+  "Core.Contracts.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Contracts.BLL",
+  "Core.Contracts.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Contracts.DAL",
+  "Core.DAL.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DAL.DTO",
+  "Core.DAL.EF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DAL.EF",
+  "Core.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Domain",
+  "Core.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DTO",
+  "Core.Resources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Resources",
+  "Shared.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.BLL",
+  "Shared.Contracts.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.BLL",
+  "Shared.Contracts.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.DAL",
+  "Shared.Contracts.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.Domain",
+  "Shared.DAL.EF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.DAL.EF",
+  "Shared.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Domain",
+  "Shared.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Helpers",
+  "Shared.Resources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Resources",
+  "Shared.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Test",
+  "WebApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\WebApp"
+}

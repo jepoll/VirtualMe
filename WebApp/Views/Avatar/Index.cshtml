@@ -1,0 +1,101 @@
+@model IEnumerable<Core.BLL.DTO.Entities.Avatar>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>@Shared.Resources.SharedRes.Index</h1>
+
+<p>
+    <a asp-action="Create">@Shared.Resources.SharedRes.CreateNew</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Health)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Stamina)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Hunger)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Stress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Strength)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dexterity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Intelligence)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Money)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sex)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Level)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Exp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Image)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Health)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Stamina)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hunger)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Stress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Strength)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dexterity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Intelligence)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Money)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sex)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Level)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Exp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Image)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">@Shared.Resources.SharedRes.Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">@Shared.Resources.SharedRes.Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">@Shared.Resources.SharedRes.Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

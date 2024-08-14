@@ -1,0 +1,1566 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Test\\Core.Test.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.BLL.DTO\\Core.BLL.DTO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.BLL.DTO\\Core.BLL.DTO.csproj",
+        "projectName": "Core.BLL.DTO",
+        "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.BLL.DTO\\Core.BLL.DTO.csproj",
+        "packagesPath": "C:\\Users\\EGOR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.BLL.DTO\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EGOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Domain\\Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Domain\\Core.Domain.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Resources\\Core.Resources.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Resources\\Core.Resources.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.Domain\\Shared.Contracts.Domain.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.Domain\\Shared.Contracts.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.BLL\\Core.BLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.BLL\\Core.BLL.csproj",
+        "projectName": "Core.BLL",
+        "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.BLL\\Core.BLL.csproj",
+        "packagesPath": "C:\\Users\\EGOR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.BLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EGOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.BLL.DTO\\Core.BLL.DTO.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.BLL.DTO\\Core.BLL.DTO.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Contracts.BLL\\Core.Contracts.BLL.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Contracts.BLL\\Core.Contracts.BLL.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DAL.DTO\\Core.DAL.DTO.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DAL.DTO\\Core.DAL.DTO.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DAL.EF\\Core.DAL.EF.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DAL.EF\\Core.DAL.EF.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Domain\\Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Domain\\Core.Domain.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.BLL\\Shared.BLL.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.BLL\\Shared.BLL.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.BLL\\Shared.Contracts.BLL.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.BLL\\Shared.Contracts.BLL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Contracts.BLL\\Core.Contracts.BLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Contracts.BLL\\Core.Contracts.BLL.csproj",
+        "projectName": "Core.Contracts.BLL",
+        "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Contracts.BLL\\Core.Contracts.BLL.csproj",
+        "packagesPath": "C:\\Users\\EGOR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Contracts.BLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EGOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.BLL.DTO\\Core.BLL.DTO.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.BLL.DTO\\Core.BLL.DTO.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Contracts.DAL\\Core.Contracts.DAL.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Contracts.DAL\\Core.Contracts.DAL.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.BLL\\Shared.Contracts.BLL.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.BLL\\Shared.Contracts.BLL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Contracts.DAL\\Core.Contracts.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Contracts.DAL\\Core.Contracts.DAL.csproj",
+        "projectName": "Core.Contracts.DAL",
+        "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Contracts.DAL\\Core.Contracts.DAL.csproj",
+        "packagesPath": "C:\\Users\\EGOR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Contracts.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EGOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DAL.DTO\\Core.DAL.DTO.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DAL.DTO\\Core.DAL.DTO.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Domain\\Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Domain\\Core.Domain.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.DAL\\Shared.Contracts.DAL.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.DAL\\Shared.Contracts.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DAL.DTO\\Core.DAL.DTO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DAL.DTO\\Core.DAL.DTO.csproj",
+        "projectName": "Core.DAL.DTO",
+        "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DAL.DTO\\Core.DAL.DTO.csproj",
+        "packagesPath": "C:\\Users\\EGOR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DAL.DTO\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EGOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Domain\\Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Domain\\Core.Domain.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Resources\\Core.Resources.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Resources\\Core.Resources.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.Domain\\Shared.Contracts.Domain.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.Domain\\Shared.Contracts.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DAL.EF\\Core.DAL.EF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DAL.EF\\Core.DAL.EF.csproj",
+        "projectName": "Core.DAL.EF",
+        "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DAL.EF\\Core.DAL.EF.csproj",
+        "packagesPath": "C:\\Users\\EGOR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DAL.EF\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EGOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.BLL.DTO\\Core.BLL.DTO.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.BLL.DTO\\Core.BLL.DTO.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Contracts.DAL\\Core.Contracts.DAL.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Contracts.DAL\\Core.Contracts.DAL.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DAL.DTO\\Core.DAL.DTO.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DAL.DTO\\Core.DAL.DTO.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Domain\\Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Domain\\Core.Domain.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.BLL\\Shared.BLL.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.BLL\\Shared.BLL.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.DAL\\Shared.Contracts.DAL.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.DAL\\Shared.Contracts.DAL.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.DAL.EF\\Shared.DAL.EF.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.DAL.EF\\Shared.DAL.EF.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Domain\\Shared.Domain.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Domain\\Shared.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Domain\\Core.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Domain\\Core.Domain.csproj",
+        "projectName": "Core.Domain",
+        "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Domain\\Core.Domain.csproj",
+        "packagesPath": "C:\\Users\\EGOR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EGOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Resources\\Core.Resources.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Resources\\Core.Resources.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.Domain\\Shared.Contracts.Domain.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.Domain\\Shared.Contracts.Domain.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Domain\\Shared.Domain.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Domain\\Shared.Domain.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Resources\\Shared.Resources.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Resources\\Shared.Resources.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DTO\\Core.DTO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DTO\\Core.DTO.csproj",
+        "projectName": "Core.DTO",
+        "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DTO\\Core.DTO.csproj",
+        "packagesPath": "C:\\Users\\EGOR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DTO\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EGOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Domain\\Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Domain\\Core.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Resources\\Core.Resources.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Resources\\Core.Resources.csproj",
+        "projectName": "Core.Resources",
+        "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Resources\\Core.Resources.csproj",
+        "packagesPath": "C:\\Users\\EGOR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Resources\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EGOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Test\\Core.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Test\\Core.Test.csproj",
+        "projectName": "Core.Test",
+        "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Test\\Core.Test.csproj",
+        "packagesPath": "C:\\Users\\EGOR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EGOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Contracts.BLL\\Core.Contracts.BLL.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Contracts.BLL\\Core.Contracts.BLL.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DAL.EF\\Core.DAL.EF.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DAL.EF\\Core.DAL.EF.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Test\\Shared.Test.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Test\\Shared.Test.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\WebApp\\WebApp.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\WebApp\\WebApp.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "NSubstitute": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.BLL\\Shared.BLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.BLL\\Shared.BLL.csproj",
+        "projectName": "Shared.BLL",
+        "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.BLL\\Shared.BLL.csproj",
+        "packagesPath": "C:\\Users\\EGOR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.BLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EGOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Contracts.DAL\\Core.Contracts.DAL.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Contracts.DAL\\Core.Contracts.DAL.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.BLL\\Shared.Contracts.BLL.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.BLL\\Shared.Contracts.BLL.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.DAL\\Shared.Contracts.DAL.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.DAL\\Shared.Contracts.DAL.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.DAL.EF\\Shared.DAL.EF.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.DAL.EF\\Shared.DAL.EF.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.BLL\\Shared.Contracts.BLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.BLL\\Shared.Contracts.BLL.csproj",
+        "projectName": "Shared.Contracts.BLL",
+        "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.BLL\\Shared.Contracts.BLL.csproj",
+        "packagesPath": "C:\\Users\\EGOR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.BLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EGOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.DAL\\Shared.Contracts.DAL.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.DAL\\Shared.Contracts.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.DAL\\Shared.Contracts.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.DAL\\Shared.Contracts.DAL.csproj",
+        "projectName": "Shared.Contracts.DAL",
+        "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.DAL\\Shared.Contracts.DAL.csproj",
+        "packagesPath": "C:\\Users\\EGOR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EGOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.Domain\\Shared.Contracts.Domain.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.Domain\\Shared.Contracts.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.Domain\\Shared.Contracts.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.Domain\\Shared.Contracts.Domain.csproj",
+        "projectName": "Shared.Contracts.Domain",
+        "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.Domain\\Shared.Contracts.Domain.csproj",
+        "packagesPath": "C:\\Users\\EGOR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EGOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.DAL.EF\\Shared.DAL.EF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.DAL.EF\\Shared.DAL.EF.csproj",
+        "projectName": "Shared.DAL.EF",
+        "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.DAL.EF\\Shared.DAL.EF.csproj",
+        "packagesPath": "C:\\Users\\EGOR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.DAL.EF\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EGOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.DAL\\Shared.Contracts.DAL.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.DAL\\Shared.Contracts.DAL.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.Domain\\Shared.Contracts.Domain.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.Domain\\Shared.Contracts.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Domain\\Shared.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Domain\\Shared.Domain.csproj",
+        "projectName": "Shared.Domain",
+        "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Domain\\Shared.Domain.csproj",
+        "packagesPath": "C:\\Users\\EGOR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EGOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.Domain\\Shared.Contracts.Domain.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.Domain\\Shared.Contracts.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Helpers\\Shared.Helpers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Helpers\\Shared.Helpers.csproj",
+        "projectName": "Shared.Helpers",
+        "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Helpers\\Shared.Helpers.csproj",
+        "packagesPath": "C:\\Users\\EGOR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Helpers\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EGOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.24.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.24.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Resources\\Shared.Resources.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Resources\\Shared.Resources.csproj",
+        "projectName": "Shared.Resources",
+        "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Resources\\Shared.Resources.csproj",
+        "packagesPath": "C:\\Users\\EGOR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Resources\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EGOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Test\\Shared.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Test\\Shared.Test.csproj",
+        "projectName": "Shared.Test",
+        "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Test\\Shared.Test.csproj",
+        "packagesPath": "C:\\Users\\EGOR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EGOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DAL.EF\\Core.DAL.EF.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DAL.EF\\Core.DAL.EF.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.DAL.EF\\Shared.DAL.EF.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.DAL.EF\\Shared.DAL.EF.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Domain\\Shared.Domain.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Domain\\Shared.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AngleSharp": {
+              "target": "Package",
+              "version": "[1.2.0-beta.423, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\WebApp\\WebApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\WebApp\\WebApp.csproj",
+        "projectName": "WebApp",
+        "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\WebApp\\WebApp.csproj",
+        "packagesPath": "C:\\Users\\EGOR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\WebApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EGOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.BLL\\Core.BLL.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.BLL\\Core.BLL.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Contracts.BLL\\Core.Contracts.BLL.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Contracts.BLL\\Core.Contracts.BLL.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DAL.EF\\Core.DAL.EF.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DAL.EF\\Core.DAL.EF.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Domain\\Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Domain\\Core.Domain.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DTO\\Core.DTO.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.DTO\\Core.DTO.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Resources\\Core.Resources.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Core.Resources\\Core.Resources.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.Domain\\Shared.Contracts.Domain.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Contracts.Domain\\Shared.Contracts.Domain.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Helpers\\Shared.Helpers.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Helpers\\Shared.Helpers.csproj"
+              },
+              "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Resources\\Shared.Resources.csproj": {
+                "projectPath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Shared.Resources\\Shared.Resources.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Asp.Versioning.Mvc": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Asp.Versioning.Mvc.ApiExplorer": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@model Core.BLL.DTO.Entities.Chat
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>@Shared.Resources.SharedRes.Details</h1>
+
+<div>
+    <h4>@Core.Resources.Domain.DomainEntities.Chat</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Avatar1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Avatar1Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FirstAvatarsName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FirstAvatarsName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Avatar2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Avatar2Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SecondAvatarsName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SecondAvatarsName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index">@Shared.Resources.SharedRes.BackToList</a>
+</div>

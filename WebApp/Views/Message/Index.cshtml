@@ -1,0 +1,58 @@
+@model MessagesCreateViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>@Shared.Resources.SharedRes.Index</h1>
+
+<iframe src="@Url.Action("ChatBox", "Message", new { id = @Model.ChatId})" style="width: 100%; height: 100%;"></iframe>
+@* <table class="table"> *@
+@*     <thead> *@
+@*     <tr> *@
+@*         <th> *@
+@*             @Html.DisplayNameFor(model => model.Message.MessageContent) *@
+@*         </th> *@
+@*         <th> *@
+@*             @Html.DisplayNameFor(model => model.Message.SendingDate) *@
+@*         </th> *@
+@*     </tr> *@
+@*     </thead> *@
+@*     <tbody> *@
+@*     @foreach (var item in Model.Messages) { *@
+@*         <tr> *@
+@*             <td> *@
+@*                 @Html.DisplayFor(modelItem => item.SenderName) *@
+@*                 @Html.DisplayFor(modelItem => item.MessageContent) *@
+@*             </td> *@
+@*             <td> *@
+@*                 @Html.DisplayFor(modelItem => item.SendingDate) *@
+@*             </td> *@
+@*         </tr> *@
+@*     } *@
+@*     </tbody> *@
+@* </table> *@
+<form asp-action="SendMessage">
+    <div class="form-group">
+        <label asp-for="Message.MessageContent"></label>
+        <input asp-for="Message.MessageContent" class="form-control" />
+        <span asp-validation-for="Message.MessageContent" class="text-danger"></span>
+    </div>
+    <div class="form-group" style="visibility: hidden">
+        <input asp-for="Message.SenderName" value="@Model.UserName"/>
+        <input asp-for="UserName" value="@Model.UserName"/>
+        <input asp-for="Message.ChatId" value="@Model.ChatId"/>
+        <input asp-for="ChatId" value="@Model.ChatId"/>
+    </div>
+    <button type="submit" class="btn btn-primary">@Shared.Resources.SharedRes.Send</button>
+</form>
+
+@* <script> *@
+@*     function autoResizeIFrame() { *@
+@*         var iframe = document.getElementById('your-iframe-id'); *@
+@*         if (iframe) { *@
+@*             iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px'; *@
+@*         } *@
+@*     } *@
+@*     setInterval(autoResizeIFrame, 1000); *@
+@* </script> *@

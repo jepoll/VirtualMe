@@ -1,0 +1,36 @@
+﻿@model MessagesCreateViewModel
+
+@{
+    Layout = "~/Views/Shared/_CustomLayout.cshtml";
+}
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Message.MessageContent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Message.SendingDate)
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Messages) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SenderName)
+                @Html.DisplayFor(modelItem => item.MessageContent)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SendingDate)
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<script>
+    setInterval(function (){
+        location.reload();
+        }, 5000);
+</script>

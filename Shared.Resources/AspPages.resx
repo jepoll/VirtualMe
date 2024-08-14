@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="ManageYourAccount" xml:space="preserve">
+        <value>Manage your account</value>
+    </data>
+    <data name="ChangeYourAccountSettings" xml:space="preserve">
+        <value>Change your account settings</value>
+    </data>
+    <data name="UpdatePassword" xml:space="preserve">
+        <value>Update password</value>
+    </data>
+    <data name="DeletingAccount" xml:space="preserve">
+        <value>Delete data and close my account</value>
+    </data>
+    <data name="DeletingAccountData" xml:space="preserve">
+        <value>Deleting this data will permanently remove your account, and this cannot be recovered.</value>
+    </data>
+    <data name="ThisDis2Fa" xml:space="preserve">
+        <value>This action only disables 2FA.</value>
+    </data>
+    <data name="IfYouWishDisableKeys" xml:space="preserve">
+        <value>Disabling 2FA does not change the keys used in authenticator apps. If you wish to change the key used in an authenticator app you should reset your authenticator keys.</value>
+    </data>
+    <data name="ResetKeys" xml:space="preserve">
+        <value>Resety your authenticator keys.</value>
+    </data>
+    <data name="Disable2FA" xml:space="preserve">
+        <value>Disable 2FA</value>
+    </data>
+    <data name="ChangeEmail" xml:space="preserve">
+        <value>ChangeEmail</value>
+    </data>
+    <data name="SendEmailVerif" xml:space="preserve">
+        <value>Send email verification letter</value>
+    </data>
+    <data name="ClickToLogOut" xml:space="preserve">
+        <value>Click here to logout</value>
+    </data>
+    <data name="YouLoggedOut" xml:space="preserve">
+        <value>You have succesifaly logged out of application</value>
+    </data>
+    <data name="UseALocalAccToLogin" xml:space="preserve">
+        <value>Use a local account to log in.</value>
+    </data>
+    <data name="Email" xml:space="preserve">
+        <value>Email</value>
+    </data>
+    <data name="Password" xml:space="preserve">
+        <value>Password</value>
+    </data>
+    <data name="LogIn" xml:space="preserve">
+        <value>Log in</value>
+    </data>
+    <data name="ForgotYourPassword" xml:space="preserve">
+        <value>Forgot your password?</value>
+    </data>
+    <data name="RegisterAsANewUser" xml:space="preserve">
+        <value>Register as a new user</value>
+    </data>
+    <data name="ResendEmailConfirm" xml:space="preserve">
+        <value>Resend email confirmation</value>
+    </data>
+    <data name="UseAnotherServiceForLogin" xml:space="preserve">
+        <value>Use another service for log in.</value>
+    </data>
+    <data name="Article" xml:space="preserve">
+        <value>Article</value>
+    </data>
+    <data name="ThereAreNoExternalServices" xml:space="preserve">
+        <value>There are no external authentication services configured. See this article about setting up this ASP.NET application to support logging in via external services.</value>
+    </data>
+    <data name="CreateANewAcc" xml:space="preserve">
+        <value>Create a new account.</value>
+    </data>
+    <data name="ConfirmPassword" xml:space="preserve">
+        <value>Confirm password</value>
+    </data>
+    <data name="Register" xml:space="preserve">
+        <value>Register</value>
+    </data>
+    <data name="UseAnotherServiceToRegister" xml:space="preserve">
+        <value>Use another service to register.</value>
+    </data>
+    <data name="YourLoginIsProtected" xml:space="preserve">
+        <value>Your login is protected with an authenticator app. Enter your authenticator code below.</value>
+    </data>
+    <data name="LoginWithARecCode" xml:space="preserve">
+        <value>Login with a recovery code</value>
+    </data>
+    <data name="DontHaveAccesToYourRecApp" xml:space="preserve">
+        <value>Don't have access to your authenticator device? You can</value>
+    </data>
+    <data name="YouHaveRequestedLoginWithRecCode" xml:space="preserve">
+        <value>You have requested to log in with a recovery code. This login will not be remembered until you provide an authenticator app code at log in or disable 2FA and log in again.</value>
+    </data>
+    <data name="YourPasswordHaveBeenReset" xml:space="preserve">
+        <value>Your password has been reset. Please click here to log in:</value>
+    </data>
+    <data name="Reset" xml:space="preserve">
+        <value>Reset</value>
+    </data>
+    <data name="ResetYourPassword" xml:space="preserve">
+        <value>Reset your password.</value>
+    </data>
+    <data name="Resend" xml:space="preserve">
+        <value>Resend</value>
+    </data>
+    <data name="EnterYourEmail" xml:space="preserve">
+        <value>Enter your email.</value>
+    </data>
+    <data name="PleaseCheckEmail" xml:space="preserve">
+        <value>Please check your email to confirm your account.</value>
+    </data>
+    <data name="ClickHereToConfAcc" xml:space="preserve">
+        <value>Click here to confirm your account</value>
+    </data>
+    <data name="Docs" xml:space="preserve">
+        <value>Docs</value>
+    </data>
+    <data name="ThisAppDoesntHave" xml:space="preserve">
+        <value>This app does not currently have a real email sender registered, see  for how to configure a real email sender.</value>
+    </data>
+    <data name="NormalyWouldEmailes" xml:space="preserve">
+        <value>Normally this would be emailed:</value>
+    </data>
+    <data name="ThisAccLockedOut" xml:space="preserve">
+        <value>This account has been locked out, please try again later.</value>
+    </data>
+    <data name="PleaseCheckEmailTOConfPassword" xml:space="preserve">
+        <value>Please check your email to reset your password.</value>
+    </data>
+    <data name="AccesDenied" xml:space="preserve">
+        <value>You do not have access to this resource.</value>
+    </data>
+    <data name="NickName" xml:space="preserve">
+        <value>Login</value>
+    </data>
+</root>

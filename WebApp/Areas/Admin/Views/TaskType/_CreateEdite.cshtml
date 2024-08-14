@@ -1,0 +1,43 @@
+﻿@model WebApp.Areas.Admin.ViewModels.TaskTypeCreateEditeViewModel
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<div class="form-group">
+    <label asp-for="TaskType.Difficulty" class="control-label"></label>
+    <select asp-for="TaskType.Difficulty" class="form-control" asp-items="Model.Difficulties"></select>
+    <span asp-validation-for="TaskType.Difficulty" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="TaskType.Money" class="control-label"></label>
+    <input asp-for="TaskType.Money" class="form-control" />
+    <span asp-validation-for="TaskType.Money" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="TaskType.Exp" class="control-label"></label>
+    <input asp-for="TaskType.Exp" class="form-control" />
+    <span asp-validation-for="TaskType.Exp" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="TaskType.DaysToComplete" class="control-label"></label>
+    <input asp-for="TaskType.DaysToComplete" class="form-control" />
+    <span asp-validation-for="TaskType.DaysToComplete" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="TaskType.HoursToComplete" class="control-label"></label>
+    <input asp-for="TaskType.HoursToComplete" class="form-control" />
+    <span asp-validation-for="TaskType.HoursToComplete" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="TaskType.MinutesToComplete" class="control-label"></label>
+    <input asp-for="TaskType.MinutesToComplete" class="form-control" />
+    <span asp-validation-for="TaskType.MinutesToComplete" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="TaskType.RewardPriceLimit" class="control-label"></label>
+    <input asp-for="TaskType.RewardPriceLimit" class="form-control" />
+    <span asp-validation-for="TaskType.RewardPriceLimit" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="TaskType.Goal" class="control-label"></label>
+    <input asp-for="TaskType.Goal" class="form-control" />
+    <span asp-validation-for="TaskType.Goal" class="text-danger"></span>
+</div>

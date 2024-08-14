@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - VirtualMe</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    @* <link rel="stylesheet" href="~/WebApp.styles.css" asp-append-version="true"/> *@
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm mb-3">
+    @* <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"> ORIGINAL CLASSES*@ 
+        <div class="container-fluid" style="margin-left: 50px">
+            <a class="header-text" asp-area="" asp-controller="Home" asp-action="Index">VirtualMe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1 -text">
+
+                    @if (User.Identity!.IsAuthenticated)
+                    {
+                            <li class="nav-item">
+                                <a class="nav-link header-text" asp-area="" asp-controller="Activity" asp-action="Index">
+                                    @Core.Resources.Views.Shared._Layout.Activities
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header-text" asp-area="" asp-controller="AvatarsTasks" asp-action="Index">
+                                    @Core.Resources.Views.Shared._Layout.Tasks
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header-text" asp-area="" asp-controller="Item" asp-action="Index">
+                                    @Core.Resources.Views.Shared._Layout.Shop
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header-text" asp-area="" asp-controller="Chat" asp-action="Index">
+                                    @Core.Resources.Views.Shared._Layout.Chats
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header-text" asp-area="" asp-controller="Players" asp-action="Index">
+                                    @Core.Resources.Views.Shared._Layout.Players
+                                </a>
+                            </li>
+                        
+                            <li class="nav-item dropdown text-dark">
+                                <a class="nav-link dropdown-toggle header-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    @Core.Resources.Views.Shared._Layout.More
+                                </a>
+                                <ul class="dropdown-menu">
+                                                                
+                                    @* Some of the controller implementations are processed in backend. No need for pages right now. *@
+                                    
+                                    @* <li> *@
+                                    @*     <a class="dropdown-item nav-link text-dark" asp-area="" asp-controller="Item" asp-action="Index"> *@
+                                    @*         @Core.Resources.Views.Shared._Layout.Items *@
+                                    @*     </a> *@
+                                    @* </li> *@
+                                    @* <li> *@
+                                    @*     <a class="dropdown-item nav-link text-dark" asp-area="" asp-controller="Interior" asp-action="Index"> *@
+                                    @*         @Core.Resources.Views.Shared._Layout.Interior *@
+                                    @*     </a> *@
+                                    @* </li> *@
+                                    <li>
+                                        <a class="dropdown-item nav-link text-dark" asp-area="" asp-controller="TaskQuest" asp-action="Index">
+                                            @Core.Resources.Views.Shared._Layout.AllTasks
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item nav-link text-dark" asp-area="Admin" asp-controller="TaskType" asp-action="ShowTaskTypes">
+                                            @Core.Resources.Views.Shared._Layout.TaskType
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item nav-link text-dark" asp-area="" asp-controller="Reward" asp-action="Index">
+                                            @Core.Resources.Views.Shared._Layout.Reward
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                    }
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <li class="nav-item dropdown text-dark">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Admin
+                            </a>
+                            <ul class="dropdown-menu">
+                                
+                                @* Some of the controller implementations are processed in backend. No need for pages right now. *@
+                                
+                                <li>
+                                    <a class="dropdown-item nav-link text-dark" asp-area="Admin" asp-controller="ActivityType" asp-action="Index">
+                                        @Core.Resources.Views.Shared._Layout.ActivityType
+                                    </a>
+                                </li>
+                                @* <li> *@
+                                @*     <a class="dropdown-item nav-link text-dark" asp-area="Admin" asp-controller="AvatarsTasks" asp-action="Index">AvatarsTasks</a> *@
+                                @* </li> *@
+                                <li>
+                                    <a class="dropdown-item nav-link text-dark" asp-area="Admin" asp-controller="Interior" asp-action="Index">
+                                        @Core.Resources.Views.Shared._Layout.Interior
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nav-link text-dark" asp-area="Admin" asp-controller="Logs" asp-action="Index">
+                                        @Core.Resources.Views.Shared._Layout.Logs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nav-link text-dark" asp-area="Admin" asp-controller="AvatarOwnsInterior" asp-action="Index">
+                                        @Core.Resources.Views.Shared._Layout.OwnsInterior
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nav-link text-dark" asp-area="Admin" asp-controller="Owns" asp-action="Index">
+                                        @Core.Resources.Views.Shared._Layout.Owns
+                                    </a>
+                                </li>
+                                @* <li> *@
+                                @*     <a class="dropdown-item nav-link text-dark" asp-area="Admin" asp-controller="TaskQuest" asp-action="Index"> *@
+                                @*         @Core.Resources.Views.Shared._Layout.TaskQuest *@
+                                @*     </a> *@
+                                @* </li> *@
+                                <li>
+                                    <a class="dropdown-item nav-link text-dark" asp-area="Admin" asp-controller="TaskType" asp-action="Index">
+                                        @Core.Resources.Views.Shared._Layout.TaskType
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    }
+                    <partial name="_LanguageSelection"/>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container-fluid">
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+</div>
+
+<footer class="uiTextColor text-muted">
+    <div>
+        @Thread.CurrentThread.CurrentCulture.Name | @Thread.CurrentThread.CurrentUICulture.Name
+    </div>
+    <div class="d-flex justify-content-end">
+        <partial name="_LoginPartial"/>
+    </div>
+</footer>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

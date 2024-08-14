@@ -1,0 +1,12 @@
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Helpers\bin\Debug\net8.0\Helpers.deps.json
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Helpers\bin\Debug\net8.0\Helpers.dll
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Helpers\bin\Debug\net8.0\Helpers.pdb
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Helpers\obj\Debug\net8.0\Helpers.csproj.AssemblyReference.cache
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Helpers\obj\Debug\net8.0\Helpers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Helpers\obj\Debug\net8.0\Helpers.AssemblyInfoInputs.cache
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Helpers\obj\Debug\net8.0\Helpers.AssemblyInfo.cs
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Helpers\obj\Debug\net8.0\Helpers.csproj.CoreCompileInputs.cache
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Helpers\obj\Debug\net8.0\Helpers.dll
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Helpers\obj\Debug\net8.0\refint\Helpers.dll
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Helpers\obj\Debug\net8.0\Helpers.pdb
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Helpers\obj\Debug\net8.0\ref\Helpers.dll

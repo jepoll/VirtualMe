@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Core.BLL.DTO\Core.BLL.DTO.csproj" />
+      <ProjectReference Include="..\Core.Contracts.BLL\Core.Contracts.BLL.csproj" />
+      <ProjectReference Include="..\Core.DAL.DTO\Core.DAL.DTO.csproj" />
+      <ProjectReference Include="..\Core.DAL.EF\Core.DAL.EF.csproj" />
+      <ProjectReference Include="..\Core.Domain\Core.Domain.csproj" />
+      <ProjectReference Include="..\Shared.BLL\Shared.BLL.csproj" />
+      <ProjectReference Include="..\Shared.Contracts.BLL\Shared.Contracts.BLL.csproj" />
+    </ItemGroup>
+
+</Project>

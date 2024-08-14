@@ -1,0 +1,66 @@
+@model Core.BLL.DTO.Entities.TaskType
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>@Shared.Resources.SharedRes.Details</h1>
+
+<div>
+    <h4>@Core.Resources.Domain.DomainEntities.TaskType</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+                    @Html.DisplayNameFor(model => model.Difficulty)
+                </dt>
+                <dd class = "col-sm-10">
+                    @Html.DisplayFor(model => model.Difficulty)
+                </dd>
+                <dt class = "col-sm-2">
+                    @Html.DisplayNameFor(model => model.Money)
+                </dt>
+                <dd class = "col-sm-10">
+                    @Html.DisplayFor(model => model.Money)
+                </dd>
+                <dt class = "col-sm-2">
+                    @Html.DisplayNameFor(model => model.Exp)
+                </dt>
+                <dd class = "col-sm-10">
+                    @Html.DisplayFor(model => model.Exp)
+                </dd>
+                <dt class = "col-sm-2">
+                    @Html.DisplayNameFor(model => model.DaysToComplete)
+                </dt>
+                <dd class = "col-sm-10">
+                    @Html.DisplayFor(model => model.DaysToComplete)
+                </dd>
+                <dt class = "col-sm-2">
+                    @Html.DisplayNameFor(model => model.HoursToComplete)
+                </dt>
+                <dd class = "col-sm-10">
+                    @Html.DisplayFor(model => model.HoursToComplete)
+                </dd>
+                <dt class = "col-sm-2">
+                    @Html.DisplayNameFor(model => model.MinutesToComplete)
+                </dt>
+                <dd class = "col-sm-10">
+                    @Html.DisplayFor(model => model.MinutesToComplete)
+                </dd>
+                <dt class = "col-sm-2">
+                    @Html.DisplayNameFor(model => model.RewardPriceLimit)
+                </dt>
+                <dd class = "col-sm-10">
+                    @Html.DisplayFor(model => model.RewardPriceLimit)
+                </dd>
+                <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Goal)
+                </dt>
+                <dd class = "col-sm-10">
+                    @Html.DisplayFor(model => model.Goal)
+                </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">@Shared.Resources.SharedRes.Edit</a> |
+    <a asp-action="Index">@Shared.Resources.SharedRes.BackToList</a>
+</div>

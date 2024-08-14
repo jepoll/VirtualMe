@@ -1,0 +1,24 @@
+﻿@page
+@model RegisterConfirmationModel
+@{
+    ViewData["Title"] = "Register confirmation";
+}
+
+<h1>@ViewData["Title"]</h1>
+@{
+    if (@Model.DisplayConfirmAccountLink)
+    {
+<p>
+    @Shared.Resources.AspPages.ThisAppDoesntHave
+    <a href="https://aka.ms/aspaccountconf">@Shared.Resources.AspPages.Docs</a>
+    @Shared.Resources.AspPages.NormalyWouldEmailes <a id="confirm-link" href="@Model.EmailConfirmationUrl">@Shared.Resources.AspPages.ClickHereToConfAcc</a>
+</p>
+    }
+    else
+    {
+<p>
+        @Shared.Resources.AspPages.PleaseCheckEmail
+</p>
+    }
+}
+

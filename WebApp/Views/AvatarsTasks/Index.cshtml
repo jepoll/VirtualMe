@@ -1,0 +1,55 @@
+@model IEnumerable<Core.BLL.DTO.AddressTables.AvatarsTasks>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>@Shared.Resources.SharedRes.Index</h1>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TaskQuest.TaskDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TimeStart)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CurrentState)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TaskQuest.TaskType!.Goal)
+        </th>
+        @* <th> *@
+        @*     @Html.DisplayNameFor(model => model.TimeFinish) *@
+        @* </th> *@
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaskQuest.TaskDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TimeStart)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CurrentState)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaskQuest.TaskType!.Goal)
+            </td>
+            @* <td> *@
+            @*     @Html.DisplayFor(modelItem => item.TimeFinish) *@
+            @* </td> *@
+            <td>
+                @* <a asp-action="Edit" asp-route-id="@item.Id">@Shared.Resources.SharedRes.Edit</a> | *@
+                <a asp-action="Details" asp-route-id="@item.Id">@Shared.Resources.SharedRes.Details</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

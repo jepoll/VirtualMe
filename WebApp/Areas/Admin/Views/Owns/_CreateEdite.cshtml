@@ -1,0 +1,22 @@
+﻿@model WebApp.Areas.Admin.ViewModels.OwnsCreateEditeViewModel
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<div class="form-group">
+    <label asp-for="Owns.AvatarId" class="control-label"></label>
+    <select asp-for="Owns.AvatarId" class ="form-control" asp-items="Model.Avatars"></select>
+</div>
+<div class="form-group">
+    <label asp-for="Owns.ItemId" class="control-label"></label>
+    <select asp-for="Owns.ItemId" class ="form-control" asp-items="Model.Items"></select>
+</div>
+@* <div class="form-group form-check"> *@
+@*     <label asp-for="Owns.IsEquipped" class="control-label"></label> *@
+@*     <input type="checkbox" asp-for="Owns.IsEquipped" class="form-control" /> *@
+@*     <span asp-validation-for="Owns.IsEquipped" class="text-danger"></span> *@
+@* </div> *@
+@* <div class="form-group form-check"> *@
+@*     <label class="form-check-label"> *@
+@*         <input id="checkBox" class="form-check-input" asp-for="Owns.IsEquipped"/> *@
+@*         @Html.DisplayNameFor(model => model.Owns.IsEquipped) *@
+@*     </label> *@
+@* </div> *@

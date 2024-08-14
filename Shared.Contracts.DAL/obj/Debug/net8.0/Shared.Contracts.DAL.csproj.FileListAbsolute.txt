@@ -1,0 +1,15 @@
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.DAL\bin\Debug\net8.0\Shared.Contracts.DAL.deps.json
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.DAL\bin\Debug\net8.0\Shared.Contracts.DAL.dll
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.DAL\bin\Debug\net8.0\Shared.Contracts.DAL.pdb
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.DAL\bin\Debug\net8.0\Shared.Contracts.Domain.dll
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.DAL\bin\Debug\net8.0\Shared.Contracts.Domain.pdb
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.DAL\obj\Debug\net8.0\Shared.Contracts.DAL.csproj.AssemblyReference.cache
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.DAL\obj\Debug\net8.0\Shared.Contracts.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.DAL\obj\Debug\net8.0\Shared.Contracts.DAL.AssemblyInfoInputs.cache
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.DAL\obj\Debug\net8.0\Shared.Contracts.DAL.AssemblyInfo.cs
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.DAL\obj\Debug\net8.0\Shared.Contracts.DAL.csproj.CoreCompileInputs.cache
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.DAL\obj\Debug\net8.0\Shared.C.C58FF3F5.Up2Date
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.DAL\obj\Debug\net8.0\Shared.Contracts.DAL.dll
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.DAL\obj\Debug\net8.0\refint\Shared.Contracts.DAL.dll
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.DAL\obj\Debug\net8.0\Shared.Contracts.DAL.pdb
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.DAL\obj\Debug\net8.0\ref\Shared.Contracts.DAL.dll

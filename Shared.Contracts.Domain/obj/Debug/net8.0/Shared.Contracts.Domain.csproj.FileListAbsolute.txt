@@ -1,0 +1,12 @@
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.Domain\bin\Debug\net8.0\Shared.Contracts.Domain.deps.json
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.Domain\bin\Debug\net8.0\Shared.Contracts.Domain.dll
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.Domain\bin\Debug\net8.0\Shared.Contracts.Domain.pdb
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.Domain\obj\Debug\net8.0\Shared.Contracts.Domain.csproj.AssemblyReference.cache
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.Domain\obj\Debug\net8.0\Shared.Contracts.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.Domain\obj\Debug\net8.0\Shared.Contracts.Domain.AssemblyInfoInputs.cache
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.Domain\obj\Debug\net8.0\Shared.Contracts.Domain.AssemblyInfo.cs
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.Domain\obj\Debug\net8.0\Shared.Contracts.Domain.csproj.CoreCompileInputs.cache
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.Domain\obj\Debug\net8.0\Shared.Contracts.Domain.dll
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.Domain\obj\Debug\net8.0\refint\Shared.Contracts.Domain.dll
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.Domain\obj\Debug\net8.0\Shared.Contracts.Domain.pdb
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.Domain\obj\Debug\net8.0\ref\Shared.Contracts.Domain.dll

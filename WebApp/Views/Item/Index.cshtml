@@ -1,0 +1,107 @@
+@using Core.Domain.Enums
+@model IEnumerable<Core.BLL.DTO.Entities.Item>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>@Shared.Resources.SharedRes.Index</h1>
+
+<p>
+    <a asp-action="Create">@Shared.Resources.SharedRes.CreateNew</a>
+</p>
+
+<div class="flex-md-row" style="justify-content: center">
+    <span style="text-align: center; background-color: blue; padding-left: 22%; padding-right: 22%; color: black; font-size: 30px"> SHOP</span>
+    <a asp-area="Admin" asp-controller="Interior" asp-action="InteriorShop">
+        <span style="text-align: center; background-color: lightblue; padding-left: 22%; padding-right: 22%; color: black; font-size: 30px">
+            INTERIOR
+        </span>
+    </a>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsConsumable)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StatToUpgrade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ItemRarity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Slot)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Image)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsConsumable)
+            </td>
+            <td>
+                @if(item.StatToUpgrade == null){
+                    <span>---</span>
+                }
+                else
+                {
+                    Html.DisplayFor(modelItem => item.StatToUpgrade);
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ItemRarity)
+            </td>
+            <td>
+                @if(item.Slot == null){
+                    <span>---</span>
+                }
+                else
+                {
+                    Html.DisplayFor(modelItem => item.Slot);
+                }
+            </td>
+            <td>
+                @if (item.Image != null)
+                {
+                    var imageBase64 = Convert.ToBase64String(item.Image);
+                    var imageUrl = $"data:image;base64,{imageBase64}";
+                    <img class="pfp" src="@imageUrl" alt="Avatar Image"/>
+                }
+                else
+                {
+                    <b>No image!</b>
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                <a id="buyItem-@item.Id" asp-action="BuyItem" asp-route-itemId="@item.Id">@Shared.Resources.SharedRes.Buy</a> |
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

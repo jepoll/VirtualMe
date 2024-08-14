@@ -1,0 +1,253 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Views\Shared\_Layout.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>_Layout.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Views\Home.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Home.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\Entities\ActivityType.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>ActivityType.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\Entities\ActivityType.ru.resx">
+        <DependentUpon>ActivityType.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Views\Home.ru.resx">
+        <DependentUpon>Home.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Views\Shared\_Layout.ru.resx">
+        <DependentUpon>_Layout.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\Entities\Activity.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Activity.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\Entities\Avatar.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Avatar.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\Entities\Activity.ru.resx">
+        <DependentUpon>Activity.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\Entities\Chat.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Chat.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\Entities\Avatar.ru.resx">
+        <DependentUpon>Avatar.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\Entities\Chat.ru.resx">
+        <DependentUpon>Chat.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\Entities\Interior.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Interior.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\Entities\Interior.ru.resx">
+        <DependentUpon>Interior.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\Entities\Item.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Item.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\Entities\Item.ru.resx">
+        <DependentUpon>Item.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\Entities\Message.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Message.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\Entities\TaskQuest.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>TaskQuest.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\Entities\Message.ru.resx">
+        <DependentUpon>Message.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\Entities\TaskType.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>TaskType.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\Entities\TaskQuest.ru.resx">
+        <DependentUpon>TaskQuest.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\Entities\TaskType.ru.resx">
+        <DependentUpon>TaskType.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\Logs\LoginHistory.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>LoginHistory.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\AddressTables\AvatarOwnsInterior.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>AvatarOwnsInterior.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\AddressTables\AvatarsActivity.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>AvatarsActivity.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\AddressTables\AvatarsTasks.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>AvatarsTasks.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\AddressTables\Owns.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Owns.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\AddressTables\AvatarsTasks.ru.resx">
+        <DependentUpon>AvatarsTasks.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\AddressTables\AvatarsActivity.ru.resx">
+        <DependentUpon>AvatarsActivity.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\AddressTables\AvatarOwnsInterior.ru.resx">
+        <DependentUpon>AvatarOwnsInterior.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\AddressTables\Owns.ru.resx">
+        <DependentUpon>Owns.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\AddressTables\Reward.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Reward.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\Logs\LoginHistory.ru.resx">
+        <DependentUpon>LoginHistory.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\Entities\Logs.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Logs.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\DomainEntities.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>DomainEntities.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\DomainEntities.ru.resx">
+        <DependentUpon>DomainEntities.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Error.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Error.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Domain\AddressTables\Reward.ru.resx">
+        <DependentUpon>Reward.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Error.ru.resx">
+        <DependentUpon>Error.resx</DependentUpon>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Views\Shared\_Layout.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>_Layout.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Views\Home.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Home.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Domain\Entities\ActivityType.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>ActivityType.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Domain\Entities\Activity.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Activity.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Domain\Entities\Avatar.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Avatar.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Domain\Entities\Chat.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Chat.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Domain\Entities\Interior.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Interior.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Domain\Entities\Item.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Item.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Domain\Entities\Message.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Message.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Domain\Entities\TaskQuest.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>TaskQuest.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Domain\Entities\TaskType.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>TaskType.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Domain\Logs\LoginHistory.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>LoginHistory.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Domain\AddressTables\AvatarOwnsInterior.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>AvatarOwnsInterior.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Domain\AddressTables\AvatarsActivity.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>AvatarsActivity.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Domain\AddressTables\AvatarsTasks.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>AvatarsTasks.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Domain\AddressTables\Owns.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Owns.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Domain\AddressTables\Reward.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Reward.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Domain\Entities\Logs.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Logs.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Domain\DomainEntities.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>DomainEntities.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Error.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Error.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+
+</Project>

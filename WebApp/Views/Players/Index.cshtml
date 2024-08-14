@@ -1,0 +1,38 @@
+@using Microsoft.IdentityModel.Logging
+@model AvatarsWithUserViewModel
+
+@{
+    ViewData["Title"] = "Players";
+}
+
+<h1 style="text-align: center">@Core.Resources.Domain.DomainEntities.Players</h1>
+<br/>
+
+<div class="avatars-list">
+@for (int i = 0; i < Model.Avatars.Count; i++) {
+    <div class="avatar-profile">
+        <div>
+            @if (Model.Avatars[i].Image != null && Model.Avatars[i].Image.Length > 0)
+            {
+                var imageBase64 = Convert.ToBase64String(Model.Avatars[i].Image);
+                var imageUrl = $"data:image;base64,{imageBase64}";
+                <img class="avatar-image" src="@imageUrl" alt="Avatar Image"/>
+            }
+            else
+            {
+                <img class="avatar-image" src="Pictures/user-pfp.webp" alt="Default Avatar Image"/>
+            }
+        </div>
+        <div class="avatar-details">
+            <div class="profile-block">
+                <p>@Model.AppUsers[i].NickName</p>
+                <p style="margin-left: 20px">@Model.Avatars[i].Level lvl.</p>
+            </div>
+            <div class="profile-block">
+                <p>@Model.Avatars[i].Sex</p>
+                <a style="margin-left: 45px;" asp-action="Chat" asp-route-id="@Model.Avatars[i].Id" class="btn btn-primary">@Shared.Resources.SharedRes.SendAMessage</a>
+            </div>
+        </div>
+    </div>
+}
+</div>

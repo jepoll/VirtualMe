@@ -1,0 +1,49 @@
+﻿@model ItemCreateEditeViewModel
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Item.Name" class="control-label"></label>
+                <input asp-for="Item.Name" class="form-control" />
+                <span asp-validation-for="Item.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Item.Description" class="control-label"></label>
+                <input asp-for="Item.Description" class="form-control" />
+                <span asp-validation-for="Item.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Item.ItemRarity" class="control-label"></label>
+                <select asp-for="Item.ItemRarity" class="form-control" asp-items="Model.Rarities"></select>
+                <span asp-validation-for="Item.ItemRarity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Item.UploadedImage" class="control-label"></label>
+                <input asp-for="Item.UploadedImage" type="file" class="form-control" />
+                <span asp-validation-for="Item.UploadedImage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Item.Price" class="control-label"></label>
+                <input asp-for="Item.Price" class="form-control"/>
+                <span asp-validation-for="Item.Price" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input id="checkBox" class="form-check-input" asp-for="Item.IsConsumable" checked="checked"/>
+                    @Html.DisplayNameFor(model => model.Item.IsConsumable)
+                </label>
+            </div>
+            <div id="stat" class="form-group" style="visibility: hidden">
+                <label asp-for="Item.StatToUpgrade" class="control-label"></label>
+                <select asp-for="Item.StatToUpgrade" class="form-control" asp-items="Model.Stats"></select>
+                <span asp-validation-for="Item.StatToUpgrade" class="text-danger"></span>
+            </div>
+            <div id="slot" class="form-group" style="visibility: hidden">
+                <label asp-for="Item.Slot" class="control-label"></label>
+                <select asp-for="Item.Slot" class="form-control" asp-items="Model.Slots"></select>
+                <span asp-validation-for="Item.Slot" class="text-danger"></span>
+            </div>
+            <div id="obj" class="form-group" style="visibility: hidden">
+                <label asp-for="Item.ObjectModel" class="control-label"></label>
+                <input asp-for="Item.ObjectModel" type="file" class="form-control" />
+                <span asp-validation-for="Item.ObjectModel" class="text-danger"></span>
+            </div>

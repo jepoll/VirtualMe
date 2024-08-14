@@ -1,0 +1,16 @@
+﻿@model WebApp.Areas.Admin.ViewModels.AvatarOwnsInteriorCreateEditeViewModel
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<div class="form-group">
+    <label asp-for="OwnsInterior.AvatarId" class="control-label"></label>
+    <select asp-for="OwnsInterior.AvatarId" class ="form-control" asp-items="Model.AvatarId"></select>
+</div>
+<div class="form-group">
+    <label asp-for="OwnsInterior.InteriorId" class="control-label"></label>
+    <select asp-for="OwnsInterior.InteriorId" class ="form-control" asp-items="Model.InteriorId"></select>
+</div>
+<div class="form-group form-check">
+    <label class="form-check-label">
+        <input class="form-check-input" asp-for="OwnsInterior.PurchaseDate" /> @Html.DisplayNameFor(model => model.OwnsInterior.PurchaseDate)
+    </label>
+</div>

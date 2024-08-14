@@ -1,0 +1,17 @@
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.DAL.EF\bin\Debug\net8.0\Shared.DAL.EF.deps.json
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.DAL.EF\bin\Debug\net8.0\Shared.DAL.EF.dll
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.DAL.EF\bin\Debug\net8.0\Shared.DAL.EF.pdb
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.DAL.EF\bin\Debug\net8.0\Shared.Contracts.DAL.dll
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.DAL.EF\bin\Debug\net8.0\Shared.Contracts.Domain.dll
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.DAL.EF\bin\Debug\net8.0\Shared.Contracts.DAL.pdb
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.DAL.EF\bin\Debug\net8.0\Shared.Contracts.Domain.pdb
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.DAL.EF\obj\Debug\net8.0\Shared.DAL.EF.csproj.AssemblyReference.cache
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.DAL.EF\obj\Debug\net8.0\Shared.DAL.EF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.DAL.EF\obj\Debug\net8.0\Shared.DAL.EF.AssemblyInfoInputs.cache
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.DAL.EF\obj\Debug\net8.0\Shared.DAL.EF.AssemblyInfo.cs
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.DAL.EF\obj\Debug\net8.0\Shared.DAL.EF.csproj.CoreCompileInputs.cache
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.DAL.EF\obj\Debug\net8.0\Shared.D.59B97AA6.Up2Date
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.DAL.EF\obj\Debug\net8.0\Shared.DAL.EF.dll
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.DAL.EF\obj\Debug\net8.0\refint\Shared.DAL.EF.dll
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.DAL.EF\obj\Debug\net8.0\Shared.DAL.EF.pdb
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.DAL.EF\obj\Debug\net8.0\ref\Shared.DAL.EF.dll

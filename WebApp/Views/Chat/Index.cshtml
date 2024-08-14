@@ -1,0 +1,38 @@
+@model IEnumerable<Core.BLL.DTO.Entities.Chat>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>@Shared.Resources.SharedRes.Index</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstAvatarsName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SecondAvatarsName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstAvatarsName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SecondAvatarsName)
+            </td>
+            <td>
+                <a asp-controller="Message" asp-action="Index" asp-route-id="@item.Id">@Shared.Resources.SharedRes.Open</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">@Shared.Resources.SharedRes.Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">@Shared.Resources.SharedRes.Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,185 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>aspnet-WebApp-A6796655-2C25-4C13-9C94-C5D6CCE5F47E</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true"/>
+    </ItemGroup>
+    
+    <ItemGroup>
+        <Folder Include="wwwroot\3DModels\temp\"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Asp.Versioning.Mvc" Version="8.1.0" />
+        <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.1.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.3" />
+        <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.2" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.2" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.2" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.2" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.2" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.2">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.1" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.2" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\_ViewImports.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\_ViewStart.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Identity\Pages\_ViewStart.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Contests\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Contests\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Contests\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Contests\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Contests\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="wwwroot\3DModels\Donut.glb" />
+      <_ContentIncludedByDefault Remove="Views\LoginHistory\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\LoginHistory\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\LoginHistory\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\LoginHistory\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\LoginHistory\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ActivityType\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ActivityType\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ActivityType\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ActivityType\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ActivityType\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Interior\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Interior\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Interior\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Interior\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Interior\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\TaskQuest\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\TaskQuest\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\TaskQuest\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\TaskQuest\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\TaskQuest\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\TaskType\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\TaskType\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\TaskType\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\TaskType\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\TaskType\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Owns\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Owns\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Owns\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Owns\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Owns\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reward\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reward\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reward\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reward\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reward\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Activity\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Activity\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Activity\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Activity\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Activity\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Avatar\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Avatar\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Avatar\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Avatar\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Avatar\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Chat\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Chat\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Chat\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Chat\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Chat\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Item\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Item\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Item\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Item\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Item\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Message\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Message\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Message\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Message\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Message\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\AvatarsActivity\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\AvatarsActivity\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\AvatarsActivity\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\AvatarsActivity\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\AvatarsActivity\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\AvatarsTasks\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\AvatarsTasks\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\AvatarsTasks\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\AvatarsTasks\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\AvatarsTasks\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Owns\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Owns\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Owns\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Owns\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Owns\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\LoginHistory\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\LoginHistory\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\LoginHistory\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\LoginHistory\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\LoginHistory\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\AvatarOwnsInterior\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\AvatarOwnsInterior\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\AvatarOwnsInterior\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\AvatarOwnsInterior\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\AvatarOwnsInterior\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Logs\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Logs\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Logs\Index.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Core.BLL\Core.BLL.csproj" />
+      <ProjectReference Include="..\Core.Contracts.BLL\Core.Contracts.BLL.csproj" />
+      <ProjectReference Include="..\Core.DTO\Core.DTO.csproj" />
+      <ProjectReference Include="..\Core.Resources\Core.Resources.csproj" />
+      <ProjectReference Include="..\Shared.Contracts.Domain\Shared.Contracts.Domain.csproj" />
+      <ProjectReference Include="..\Core.DAL.EF\Core.DAL.EF.csproj" />
+      <ProjectReference Include="..\Core.Domain\Core.Domain.csproj" />
+      <ProjectReference Include="..\Shared.Helpers\Shared.Helpers.csproj" />
+      <ProjectReference Include="..\Shared.Resources\Shared.Resources.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Update="3DModels\Donut.glb">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <UpToDateCheckInput Remove="Views\Contests\Create.cshtml" />
+      <UpToDateCheckInput Remove="Views\Contests\Delete.cshtml" />
+      <UpToDateCheckInput Remove="Views\Contests\Details.cshtml" />
+      <UpToDateCheckInput Remove="Views\Contests\Edit.cshtml" />
+      <UpToDateCheckInput Remove="Views\Contests\Index.cshtml" />
+      <UpToDateCheckInput Remove="Areas\Admin\Views\LoginHistory\Delete.cshtml" />
+      <UpToDateCheckInput Remove="Areas\Admin\Views\LoginHistory\Details.cshtml" />
+      <UpToDateCheckInput Remove="Areas\Admin\Views\LoginHistory\Index.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AdditionalFiles Include="Views\Reward\Create.cshtml" />
+      <AdditionalFiles Include="Views\Reward\Delete.cshtml" />
+      <AdditionalFiles Include="Views\Reward\Details.cshtml" />
+      <AdditionalFiles Include="Views\Reward\Edit.cshtml" />
+      <AdditionalFiles Include="Views\Reward\Index.cshtml" />
+      <AdditionalFiles Include="Views\Reward\_CreateEdite.cshtml" />
+      <AdditionalFiles Include="Views\TaskQuest\Create.cshtml" />
+      <AdditionalFiles Include="Views\TaskQuest\Delete.cshtml" />
+      <AdditionalFiles Include="Views\TaskQuest\Details.cshtml" />
+      <AdditionalFiles Include="Views\TaskQuest\Edit.cshtml" />
+      <AdditionalFiles Include="Views\TaskQuest\Index.cshtml" />
+      <AdditionalFiles Include="Views\TaskQuest\_CreateEdite.cshtml" />
+    </ItemGroup>
+    
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+</Project>

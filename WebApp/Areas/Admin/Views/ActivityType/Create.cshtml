@@ -1,0 +1,28 @@
+@model WebApp.Areas.Admin.ViewModels.ActivityTypeCreateEditeViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>@Shared.Resources.SharedRes.Create</h1>
+
+<h4>@Core.Resources.Domain.DomainEntities.ActivityType</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form id="activityTypeCreate" asp-action="Create">
+            <partial name="_CreateEdit" model="Model"/>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">@Shared.Resources.SharedRes.BackToList</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

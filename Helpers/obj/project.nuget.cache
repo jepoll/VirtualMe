@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "3/4wHMNwiCo2oJsQlczh+Bb3/Wz8xstLIZ8PkEcf83wdLgPpfp/FspPZRBsgxfqezHNFe9vszFbb5NdNjmniqw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\EGOR\\RiderProjects\\icd0024-23-24-s\\VirtualMe\\Helpers\\Helpers.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\EGOR\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.6.0\\microsoft.identitymodel.abstractions.7.6.0.nupkg.sha512",
+    "C:\\Users\\EGOR\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.6.0\\microsoft.identitymodel.jsonwebtokens.7.6.0.nupkg.sha512",
+    "C:\\Users\\EGOR\\.nuget\\packages\\microsoft.identitymodel.logging\\7.6.0\\microsoft.identitymodel.logging.7.6.0.nupkg.sha512",
+    "C:\\Users\\EGOR\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.6.0\\microsoft.identitymodel.tokens.7.6.0.nupkg.sha512",
+    "C:\\Users\\EGOR\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.6.0\\system.identitymodel.tokens.jwt.7.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

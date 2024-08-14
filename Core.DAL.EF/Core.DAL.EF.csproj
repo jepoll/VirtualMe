@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Core.DAL.EF</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.2" />
+      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Core.BLL.DTO\Core.BLL.DTO.csproj" />
+      <ProjectReference Include="..\Core.Contracts.DAL\Core.Contracts.DAL.csproj" />
+      <ProjectReference Include="..\Core.DAL.DTO\Core.DAL.DTO.csproj" />
+      <ProjectReference Include="..\Core.Domain\Core.Domain.csproj" />
+      <ProjectReference Include="..\Shared.BLL\Shared.BLL.csproj" />
+      <ProjectReference Include="..\Shared.Contracts.DAL\Shared.Contracts.DAL.csproj" />
+      <ProjectReference Include="..\Shared.DAL.EF\Shared.DAL.EF.csproj" />
+      <ProjectReference Include="..\Shared.Domain\Shared.Domain.csproj" />
+    </ItemGroup>
+
+</Project>

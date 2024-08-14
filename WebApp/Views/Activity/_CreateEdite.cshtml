@@ -1,0 +1,53 @@
+﻿@model ActivityCreateEditeViewModel
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Activity.ActivityTypeId" class="control-label"></label>
+                <select asp-for="Activity.ActivityTypeId" class ="form-control" asp-items="Model.Types"></select>
+                <span asp-validation-for="Activity.ActivityTypeId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Activity.Stat" class="control-label"></label>
+                <select asp-for="Activity.Stat" class="form-control" asp-items="Model.Stats"></select>
+                <span asp-validation-for="Activity.Stat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Activity.StrengthLimit" class="control-label"></label>
+                <input asp-for="Activity.StrengthLimit" class="form-control" />
+                <span asp-validation-for="Activity.StrengthLimit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Activity.DexterityLimit" class="control-label"></label>
+                <input asp-for="Activity.DexterityLimit" class="form-control" />
+                <span asp-validation-for="Activity.DexterityLimit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Activity.IntelligenceLimit" class="control-label"></label>
+                <input asp-for="Activity.IntelligenceLimit" class="form-control" />
+                <span asp-validation-for="Activity.IntelligenceLimit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Activity.LevelLimit" class="control-label"></label>
+                <input asp-for="Activity.LevelLimit" class="form-control" />
+                <span asp-validation-for="Activity.LevelLimit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Activity.StressGain" class="control-label"></label>
+                <input asp-for="Activity.StressGain" class="form-control" />
+                <span asp-validation-for="Activity.StressGain" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Activity.StaminaDrain" class="control-label"></label>
+                <input asp-for="Activity.StaminaDrain" class="form-control" />
+                <span asp-validation-for="Activity.StaminaDrain" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Activity.Name" class="control-label"></label>
+                <input asp-for="Activity.Name" class="form-control" />
+                <span asp-validation-for="Activity.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Activity.Description" class="control-label"></label>
+                <input asp-for="Activity.Description" class="form-control" />
+                <span asp-validation-for="Activity.Description" class="text-danger"></span>
+            </div>

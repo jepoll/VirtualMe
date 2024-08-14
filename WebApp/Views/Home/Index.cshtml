@@ -1,0 +1,438 @@
+﻿﻿@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.AspNetCore.Identity
+@using Core.Domain.Enums
+@using Microsoft.AspNetCore.Http.Features
+@using NuGet.Protocol
+@model AvatarInventoryViewModel
+@{
+    ViewData["Title"] = "Avatar Page";
+}
+
+<head>
+    <link rel="stylesheet" href="css/site.css">
+</head>
+
+<div class="level-container">
+    <div class="pfp-holder">
+        @if (Model.Avatar.Image != null && Model.Avatar.Image.Length > 0)
+        {
+            var imageBase64 = Convert.ToBase64String(Model.Avatar.Image);
+            var imageUrl = $"data:image;base64,{imageBase64}";
+            <a asp-action="Edit" asp-route-id="@Model.Avatar.Id" asp-controller="Avatar" >
+                        <img class="pfp" src="@imageUrl" alt="Avatar Image"/>
+            </a>
+        }
+        else
+        {
+            <a asp-action="Edit" asp-route-id="@Model.Avatar.Id" asp-controller="Avatar" >
+                <img class="pfp" src="Pictures/user-pfp.webp"alt="Avatar Image"/>
+            </a>
+        }
+    </div>
+    <div class="level-display-name">
+        <p>@Shared.Resources.SharedRes.Level</p>
+    </div>
+    <div class="level-text">
+        <p>@Html.DisplayFor(model => model.Avatar.Level)</p>
+    </div>
+    <div class="exp-bar">
+        <div class="bg-exp-bar">
+            <div class="fg-exp-bar">
+
+            </div>
+        </div>
+        <div class="exp-text">
+            <p>@Html.DisplayNameFor(model => model.Avatar.Exp): @Html.DisplayFor(model => model.Avatar.Exp) /
+                @Html.DisplayFor(model => model.Avatar.ExpToLevelUp)</p>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="margin-left: 40px">
+    <div class="col-sm-2" style="">
+        <!-- Stats -->
+        <div class="stats-container">
+            <!--Use Icons instead of DisplayNames--> 
+            <div class="container-for-each-stat">
+                <div class="circle-image strength-icon">
+                    <img alt="strength icon" class="stat-image" src="Pictures/StrengthTransparent.png"/>
+                </div>
+                <div class="text-stat-container">
+                    <p>@Html.DisplayNameFor(model => model.Avatar.Strength)</p>
+                    <p style="font-weight: bold">@Html.DisplayFor(model => model.Avatar.Strength)</p>
+                </div>
+            </div>
+            <div class="container-for-each-stat">
+                <div class="circle-image dexterity-icon">
+                    <img alt="dexterity icon" width="42" height="42" src="Pictures/AgilityTransparent.png"/>
+                </div>
+                <div class="text-stat-container">
+                    <p>@Html.DisplayNameFor(model => model.Avatar.Dexterity)</p>
+                    <p style="font-weight: bold">@Html.DisplayFor(model => model.Avatar.Dexterity)</p>
+                </div>
+            </div>
+            <div class="container-for-each-stat">
+                <div class="circle-image intelligence-icon">
+                    <img alt="intelligence icon" class="stat-image" src="Pictures/IntelliganceTransparent.png"/>
+                </div>
+                <div class="text-stat-container">
+                    <p>@Html.DisplayNameFor(model => model.Avatar.Intelligence)</p>
+                    <p style="font-weight: bold">@Html.DisplayFor(model => model.Avatar.Intelligence)</p>
+                </div>
+            </div>
+            
+            @*-----------------  BAR STATS *@
+            <div class="container-unchangeable-stats">
+                <div class="container-for-each-stat">
+                    <div class="circle-image health-icon">
+                        <img alt="heart icon" class="stat-image" src="Pictures/HearthTransparent.png"/>
+                    </div>
+                    <div class="text-stat-container">
+                        <p>@Html.DisplayNameFor(model => model.Avatar.Health)</p>
+                        <div class="bg-health-bar bg-stat-bar">
+                            <span class="stat-bar-text">@Html.DisplayFor(model => model.Avatar.Health) / 100</span>
+                            <div class="fg-health-bar fg-stat-bar">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container-for-each-stat">
+                    <div class="circle-image hunger-icon">
+                        <img alt="food icon" class="stat-image" src="Pictures/FoodTransparent.png"/>
+                    </div>
+                    <div class="text-stat-container">
+                        <p>@Html.DisplayNameFor(model => model.Avatar.Hunger)</p>
+                        <div class="bg-hunger-bar bg-stat-bar">
+                            <span class="stat-bar-text">@Html.DisplayFor(model => model.Avatar.Hunger) / 100</span>
+                            <div class="fg-hunger-bar fg-stat-bar">
+                        
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                <div class="container-for-each-stat">
+                    <div class="circle-image stamina-icon">
+                        <img alt="stamina icon" class="stat-image" src="Pictures/StaminaIcon.png"/>
+                    </div>
+                    <div class="text-stat-container">
+                        <p>@Html.DisplayNameFor(model => model.Avatar.Stamina)</p>
+                        <div class="bg-stamina-bar bg-stat-bar">
+                            <span class="stat-bar-text">@Html.DisplayFor(model => model.Avatar.Stamina) / 100</span>
+                            <div class="fg-stamina-bar fg-stat-bar">
+                         
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="container-for-each-stat">
+                    <div class="circle-image stress-icon">
+                        <img alt="stress icon" class="stat-image" src="Pictures/StressTransparent.png"/>
+                    </div>
+                    <div class="text-stat-container">
+                        <p>@Html.DisplayNameFor(model => model.Avatar.Stress)</p>
+                        <div class="bg-stress-bar bg-stat-bar">
+                            <span class="stat-bar-text">@Html.DisplayFor(model => model.Avatar.Stress) / 100</span>
+                            <div class="fg-stress-bar fg-stat-bar">
+                                                 
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <a href="3DModels/Character.glb" download>@Shared.Resources.SharedRes.DownloadCharacter</a>
+                
+            </div>
+            
+            
+        </div>
+    </div>
+    <div class="col-sm-3" id="avatar-container">
+        <!-- Model -->
+        
+    </div>
+    <div class="col-sm-6 inventory-out-container">
+        <div class="money-space-container">
+            <div class="money-container">
+                <p style="font-weight: bold"> @Html.DisplayFor(model => model.Avatar.Money) <img class="circle-image coins-icon stat-image" alt="coins icon" src="Pictures/EuroCoinsTransparent.png"/></p>
+            </div>
+            <div class="inventory-space-container">
+                <p>0 / 15</p>
+            </div>
+        </div>
+        <div class="inventory-and-sell-container" ondragover="allowDrop(event)">
+            <div class="inventory-container" >
+                <div class="item-grid" >
+                    
+                    @foreach (var item in Model.Items)
+                    {
+                        var color = item.IsEquipped ? "red" : "gray";
+                        <!-- Inventory Items -->
+                        <div class="item-cell" style="border-color: @color" data-transferId="@item.Id" ondblclick="Use(event)">
+                            <div data-transferId="@item.Id"  class="item" draggable="true" ondragstart="drag(event)">
+                                @if (item.Item!.Image != null && item.Item.Image.Length > 0)
+                                {
+                                    var imageBase64 = Convert.ToBase64String(item.Item.Image);
+                                    var imageUrl = $"data:image;base64,{imageBase64}";
+                                    <img class="item-image" data-transferId="@item.Id" src="@imageUrl" alt="Item Image"/>
+
+                                }
+                                <div class="item-info" draggable="false">
+                                    <div class="item-image-text" draggable="false">
+                                        @if (item.Item.Image != null && item.Item.Image.Length > 0)
+                                        {
+                                            var imageBase64 = Convert.ToBase64String(item.Item.Image);
+                                            var imageUrl = $"data:image;base64,{imageBase64}";
+                                            <img class="item-info-image" src="@imageUrl" alt="Item Info Image"/>
+                                        }
+                                        <div class="item-info-text" draggable="false">
+                                            <b>@item.Item.Name</b>
+                                            <p>@item.Item.Slot</p>
+                                        </div>
+                                    </div>
+                                    <div class="item-info-description" draggable="false">
+                                        <p>@item.Item.ItemRarity</p>
+                                        <p>@item.Item.Description</p>
+                                        <p>@(item.Item.Price / 2)€</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    }
+                    @for (int i = 0; i < 25; i++)
+                    {
+                        <div class="item-cell">
+                    
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="sell-container" id="sellContainer" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p>@Core.Resources.Views.Home.DragHereToSell</p>
+                <form id="sellForm" asp-controller="Item" asp-action="SellItem" style="visibility: hidden">
+                    <input id="sellInput"/>
+                </form>
+            </div>
+            <div style="visibility: hidden">
+                <form id="useForm" asp-controller="Item" asp-action="UseItem">
+                    <input id="useInput"/>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three/examples/js/controls/OrbitControls.js"></script>
+@{
+    var sex = Model.Avatar.Sex.ToString().ToLower();
+}
+
+<script>
+    function Use(ev){
+        // console.log("Double clicked!" + ev.target.dataset.transferid);
+        let form = document.getElementById('useForm');
+        let input = document.getElementById('useInput');
+        
+        input.name = 'id';
+        input.value = ev.target.dataset.transferid;
+        
+        form.submit();
+        }
+</script>
+
+<script>
+    function allowDrop(ev){
+        ev.preventDefault();
+        }
+
+    function drag(ev) {
+        ev.dataTransfer.setData("sellId", ev.target.dataset.transferid);
+        // console.log(ev.target.dataset)
+        // console.log(ev.dataTransfer)
+        // console.log(ev);
+        // console.log("DragStart");
+        }
+        
+    function drop(ev){
+        ev.preventDefault();
+        console.log(ev.dataTransfer)
+        let itemId = ev.dataTransfer.getData("sellId");
+        
+        if (ev.target.id === 'sellContainer') {
+            console.log("Dropped: " + itemId);
+          
+            let form = document.getElementById('sellForm');
+            let input = document.getElementById('sellInput');
+            
+            input.name = 'id';
+            input.value = itemId;
+
+            form.submit();
+      
+          //droppedItem.parentNode.removeChild(droppedItem);
+          //location.reload();
+        }
+    }
+</script>
+
+<script>
+    // setTimeout(() => {console.log('Delay for file access fix');}, 1000);
+// 3D model render script
+    var scene = new THREE.Scene();
+    
+    var containerWidth = document.getElementById("avatar-container").clientWidth;
+    var containerHeight = document.getElementById("avatar-container").clientHeight;
+    
+    var camera = new THREE.PerspectiveCamera(75, containerWidth / containerHeight, 0.1, 1000);
+    camera.position.z = 10;
+    
+    var renderer = new THREE.WebGLRenderer({alpha: true});
+    renderer.setSize(containerWidth, containerHeight);
+    document.getElementById("avatar-container").appendChild(renderer.domElement);
+    
+    var modelPath;
+    if ('@sex' === 'male'){
+        modelPath = '3DModels/Character.glb';
+    }else{
+        modelPath = '3DModels/CharacterFem.glb'    
+    }
+        
+
+    const loader = new THREE.GLTFLoader();
+    loader.load(
+        modelPath,
+        (gltf) => {
+                gltf.scene.rotation.y = -Math.PI / 2;
+                gltf.scene.scale.set(2,2,2);
+                scene.add(gltf.scene);
+            },
+        undefined,
+        (error) => {
+            console.error('An error occurred', error);
+        }
+    );
+    
+    @{
+        System.IO.DirectoryInfo di = new DirectoryInfo("wwwroot/3DModels/temp");
+        foreach (var file in di.GetFiles())
+        {
+            <text>
+            console.log('3DModels/temp/' + '@file.Name');
+            loader.load(
+                '3DModels/temp/' + '@file.Name',
+            (gltf) => {
+                    gltf.scene.rotation.y = -Math.PI / 2;
+                    gltf.scene.scale.set(2,2,2);
+                    scene.add(gltf.scene);
+                },
+            undefined,
+            (error) => {
+                console.error('An error occurred', error);
+            }
+            );
+            </text>
+            
+            @* <text> *@
+            @* loader.load( *@
+            @*     loader.parse() *@
+            @* </text> *@
+        }
+    }
+
+    var light = new THREE.PointLight(0xffffff, 1, 0); // Color, Intensivity, MaxDistance (0 - endless)
+    var light2 = new THREE.PointLight(0xffffff, 1, 0);
+    var light3 = new THREE.PointLight(0xffffff, 1, 0);
+    var light4 = new THREE.PointLight(0xffffff, 1, 0);
+    var light5 = new THREE.PointLight(0xffffff, 1, 0);
+    var light6 = new THREE.PointLight(0xffffff, 1, 0);
+    var light7 = new THREE.PointLight(0xffffff, 1, 0);
+    var light8 = new THREE.PointLight(0xffffff, 1, 0);
+    light.position.set(3, -2, 2); // x (right, left), y (top, down), z (front, back)
+    light2.position.set(3, 5, 2);
+    light3.position.set(3, -2, -2);
+    light4.position.set(3, 5, -2);
+    light5.position.set(-3, -2, 2);
+    light6.position.set(-3, 5, 2);
+    light7.position.set(-3, -2, -2);
+    light8.position.set(-3, 5, -2);
+    scene.add(light);
+    scene.add(light2);
+    scene.add(light3);
+    scene.add(light4);
+    scene.add(light5);
+    scene.add(light6);
+    scene.add(light7);
+    scene.add(light8);
+    
+    var controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.25;
+    controls.enablePan = false; // Disable cam Origin drag inside scene
+    //controls.enableDamping = false;
+    
+    function animate(){
+        requestAnimationFrame(animate)
+
+        update();    
+    }
+        
+    
+    function update() {
+    
+        renderer.render(scene, camera);
+        
+        controls.update();
+
+    }
+    // controls.addEventListener('change', update);
+
+    animate()
+</script>
+
+<script>
+    //script for stat bars
+    let currentExp = @Html.Raw(Json.Serialize(Model.Avatar.Exp));
+    let expToLevelUp = @Html.Raw(Json.Serialize(Model.Avatar.ExpToLevelUp));
+    
+    let maxStatNumber = 100;
+    
+    let currentStamina =  @Html.Raw(Json.Serialize(Model.Avatar.Stamina));
+    let currentHunger =  @Html.Raw(Json.Serialize(Model.Avatar.Hunger));
+    let currentStress =  @Html.Raw(Json.Serialize(Model.Avatar.Stress));
+    let currentHealth =  @Html.Raw(Json.Serialize(Model.Avatar.Health));
+    
+    let expBar = document.querySelector('.fg-exp-bar');
+    
+    
+    let staminaBar = document.querySelector('.fg-stamina-bar');
+    let hungerBar = document.querySelector('.fg-hunger-bar');
+    let stressBar = document.querySelector('.fg-stress-bar');
+    let healthBar = document.querySelector('.fg-health-bar');
+    
+    let expWidthPercentage = (currentExp / expToLevelUp) * 100;
+    
+    let staminaBarWidthPercentage = (currentStamina / maxStatNumber) * 100;
+    let hungerWidthPercentage = (currentHunger / maxStatNumber) * 100;
+    let stressWidthPercentage = (currentStress / maxStatNumber) * 100;
+    let healthWidthPercentage = (currentHealth / maxStatNumber) * 100;
+    
+    expBar.style.width = expWidthPercentage + '%';
+    
+    staminaBar.style.width = staminaBarWidthPercentage + '%';
+    hungerBar.style.width = hungerWidthPercentage + '%';
+    stressBar.style.width = stressWidthPercentage + '%';
+    healthBar.style.width = healthWidthPercentage + '%';
+</script>

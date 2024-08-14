@@ -1,0 +1,12 @@
+﻿@model Core.Domain.Entities.Chat
+
+@{
+    ViewData["Title"] = "Chat";
+}
+<h1>@Core.Resources.Domain.DomainEntities.Chat</h1>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

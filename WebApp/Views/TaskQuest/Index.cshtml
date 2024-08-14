@@ -1,0 +1,65 @@
+@model IEnumerable<Core.BLL.DTO.Entities.TaskQuest>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>@Shared.Resources.SharedRes.Index</h1>
+
+<p>
+    <a asp-action="Create">@Shared.Resources.SharedRes.CreateNew</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TaskType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Activity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaskType.Goal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaskDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaskType.Money)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaskType.Exp)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaskType!.Difficulty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Activity!.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaskType!.Goal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaskDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaskType!.Money)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaskType!.Exp)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">@Shared.Resources.SharedRes.Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">@Shared.Resources.SharedRes.Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">@Shared.Resources.SharedRes.Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

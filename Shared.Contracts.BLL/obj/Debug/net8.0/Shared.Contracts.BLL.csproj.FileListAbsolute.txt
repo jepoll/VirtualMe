@@ -1,0 +1,17 @@
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.BLL\bin\Debug\net8.0\Shared.Contracts.BLL.deps.json
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.BLL\bin\Debug\net8.0\Shared.Contracts.BLL.dll
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.BLL\bin\Debug\net8.0\Shared.Contracts.BLL.pdb
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.BLL\bin\Debug\net8.0\Shared.Contracts.DAL.dll
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.BLL\bin\Debug\net8.0\Shared.Contracts.Domain.dll
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.BLL\bin\Debug\net8.0\Shared.Contracts.DAL.pdb
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.BLL\bin\Debug\net8.0\Shared.Contracts.Domain.pdb
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.BLL\obj\Debug\net8.0\Shared.Contracts.BLL.csproj.AssemblyReference.cache
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.BLL\obj\Debug\net8.0\Shared.Contracts.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.BLL\obj\Debug\net8.0\Shared.Contracts.BLL.AssemblyInfoInputs.cache
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.BLL\obj\Debug\net8.0\Shared.Contracts.BLL.AssemblyInfo.cs
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.BLL\obj\Debug\net8.0\Shared.Contracts.BLL.csproj.CoreCompileInputs.cache
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.BLL\obj\Debug\net8.0\Shared.C.D2394EF8.Up2Date
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.BLL\obj\Debug\net8.0\Shared.Contracts.BLL.dll
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.BLL\obj\Debug\net8.0\refint\Shared.Contracts.BLL.dll
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.BLL\obj\Debug\net8.0\Shared.Contracts.BLL.pdb
+C:\Users\EGOR\RiderProjects\icd0024-23-24-s\VirtualMe\Shared.Contracts.BLL\obj\Debug\net8.0\ref\Shared.Contracts.BLL.dll
